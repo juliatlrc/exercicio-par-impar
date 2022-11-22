@@ -5,12 +5,14 @@ let sorteio = Math.floor(Math.random() * (100 - 1) + 1);
 let tipo = sorteio % 2 == 0 ? 'par' : 'impar';
 
 
-if (!Number.isNaN(escolha)) {
+if (Number.isNaN(escolha) == true) {
 
   if (tipo != escolha) {
     alert("O número sorteado foi: " + sorteio + ", esse número é " + tipo + " portanto, você errou!");
   } else {
     alert("O número sorteado foi: " + sorteio + ", esse número é " + tipo + " portanto, você acertou!!!");
   }
+} else {
+  alert("ERRO: Digite um valor válido");
 }
 
